@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="60dp"
+        android:hint="@string/password"
+        app:boxStrokeColor="@color/purple_200"
+        app:boxStrokeWidth="3dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:passwordToggleEnabled="true"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/black"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:id="@+id/passwordTextEdit"
+
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:hint="@string/email"
+        app:boxStrokeColor="@color/purple_200"
+        app:boxStrokeWidth="3dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.324">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/emailEditText"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signIn_button"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="80dp"
+        android:text="@string/sign_in"
+        app:layout_constraintEnd_toEndOf="@+id/passwordTextField"
+        app:layout_constraintStart_toStartOf="@+id/passwordTextField"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextField" />
+    <!--
+        <EditText
+            android:id="@+id/editText_SingIn_EmailAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="52dp"
+            android:ems="10"
+            android:hint="@string/email"
+
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.118" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            app:layout_constraintBottom_toTopOf="@+id/editText_SingIn_EmailAddress"
+            app:layout_constraintStart_toStartOf="@+id/editText_SingIn_EmailAddress" />
+
+        <EditText
+            android:id="@+id/editText_SignIn_Password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/editText_SingIn_EmailAddress"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editText_SingIn_EmailAddress"
+            app:layout_constraintTop_toBottomOf="@+id/editText_SingIn_EmailAddress" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            app:layout_constraintBottom_toTopOf="@+id/editText_SignIn_Password"
+            app:layout_constraintStart_toStartOf="@+id/editText_SignIn_Password" />
+
+        <Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="88dp"
+            android:text="@string/sign_in"
+            app:layout_constraintEnd_toEndOf="@+id/editText_SignIn_Password"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/editText_SignIn_Password"
+            app:layout_constraintTop_toBottomOf="@+id/editText_SignIn_Password" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>
